@@ -1,0 +1,25 @@
+---
+import { getAuthState } from '@packages/auth'
+import { t } from '@packages/i18n'
+import PresentationLayout from '../../layouts/PresentationLayout.astro'
+import ForbiddenPage from '../auth/forbidden.astro'
+import Hero from '../../sections/Hero.astro'
+
+// SSR page that fetches the current auth state
+
+const { isLoggedIn, user } = await getAuthState(Astro.request)
+---
+
+{
+  isLoggedIn && (
+    <PresentationLayout>
+      <Hero>
+        <p slot="sub-heading">{t('common.admin.sub_header')}</p>
+        <p slot="heading">{t('common.admin.header')}</p>
+        {t('common.admin.msg')}, <strong>{(user.name || '').split(' ')[0]}</strong>!
+      </Hero>
+    </PresentationLayout>
+  )
+}
+
+{!isLoggedIn && <ForbiddenPage />}

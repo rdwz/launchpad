@@ -1,0 +1,20 @@
+---
+import { SEO } from 'astro-seo'
+import PresentationLayout from '../layouts/PresentationLayout.astro'
+import { t } from '@packages/i18n'
+import Hero from '../sections/Hero.astro'
+---
+
+<PresentationLayout>
+  <SEO
+    slot="head"
+    title={t('common.page.not_found')}
+    description={t('common.page.page_not_avaialable')}
+  />
+
+  <Hero>
+    <p slot="sub-heading">„ Houston? Houston...?! ”</p>
+    <p slot="heading">404</p>
+    There is no route at the end of the Universe. <br />Turn around, brave Astronaut.
+  </Hero>
+</PresentationLayout>

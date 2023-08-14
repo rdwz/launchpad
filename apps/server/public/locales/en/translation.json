@@ -1,0 +1,35 @@
+{
+  "common": {
+    "home": {
+      "got_a_mission": "Got a mission?",
+      "weve_got_you_covered": "We've got you covered! Boosters included.",
+      "intro_text": "Build your new Webapp on top of Astro Launchpad. Oh, I hear you have some decent requirements? User authentication, Internationalization, Top Performance? Microservices? Nice requirements! <0>Bring' em on!</0>",
+      "fork_me": "Fork me on GitHub"
+    },
+    "back": "Back",
+    "i18n": {
+      "en": "English",
+      "de": "German"
+    },
+    "auth": {
+      "signin": "Sign In",
+      "logout": "Logout",
+      "forbidden": "Access denied",
+      "you_are_not_allowed_to_access_this_page": "You're not allowed to access this page",
+      "sign_up_and_log_in_via_social_login": "Choose a social login provider of your liking to continue.",
+      "social_logins": "Social Login",
+      "social_login_providers_available": "The following social logins are available:",
+      "already_logged_in": "You are already signed in."
+    },
+    "page": {
+      "not_found": "404 - Not found",
+      "page_not_avaialable": "The page you're trying to visit is not available"
+    },
+    "admin": {
+      "title": "Dashboard",
+      "msg": "Have a lot of fun with Astro Launchpad",
+      "sub_header": "Welcome back, Commander!",
+      "header": "You seem to be the Commander of this ship."
+    }
+  }
+}
